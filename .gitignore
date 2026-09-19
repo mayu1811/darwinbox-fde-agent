@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Databases (regenerated on first run)
+*.db
+*.db-shm
+*.db-wal
+
+# Secrets - never commit
+.env
+.env.local
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Uploads
+data/uploads/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# Production build output copied into the backend image
+backend/static/

@@ -1,0 +1,28 @@
+# Runs the exact same single-service image that is deployed to Render:
+# FastAPI serves the API, the mock target platform and the built React UI.
+#
+#   docker compose up --build   ->  http://localhost:8000
+#
+# For day-to-day development prefer the two local commands in the README -
+# they give hot reload on both sides.
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      LLM_PROVIDER: "none"          # demo mode: no API key, no network
+      ENVIRONMENT: "production"
+      LOG_LEVEL: "INFO"
+      AGENT_STEP_DELAY_SECONDS: "0.25"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request;urllib.request.urlopen('http://localhost:8000/api/health')"
+      interval: 10s
+      timeout: 3s
+      retries: 5
