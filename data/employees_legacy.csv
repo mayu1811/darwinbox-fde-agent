@@ -1,0 +1,19 @@
+Emp ID,Employee Name,Email Address,Contact No,DOB,DOJ,Dept,Job Title,Employee Status,Remarks
+EMP1001,  Rajesh  Kumar ,RAJESH.KUMAR@ACME-CORP.COM ,+91 98765 43210,12/08/1988,01/04/2015,Engineering,Senior Engineer,Active,migrated from AS400
+EMP1002,priya sharma,priya.sharma@acme-corp.com,9876543211,23/07/1991,15/06/2017, engineering ,Engineering Manager,ACTIVE,
+EMP1003,Amit Verma,amit.verma@acme-corp.com,+919876543212,05/11/1985,10/01/2013,Finance,Finance Controller,Active,
+EMP1003,Amit Verma,amit.verma@acme-corp.com,+919876543212,05/11/1985,10/01/2013,Finance,Finance Controller,Active,
+EMP1004,SUNITA  RAO,sunita.rao@acme-corp.com,98765 43213,31/02/1990,22/09/2019,Human Resources,HR Business Partner,active,check DOB
+EMP1005,Vikram Singh,vikram.singh@acme-corp.com,+91-9876543214,17/03/1992,05/05/2020,Sales,Regional Sales Lead,Active,
+EMP1006,Neha  Gupta,NEHA.GUPTA@acme-corp.com,9876543215,09/12/1993,11/11/2021,Marketing,Brand Manager,Inactive,
+EMP1007,Arjun Mehta,arjun.mehta@acme-corp.com,+91 9876543216,28/06/1987,03/03/2016,Engineering,Principal Engineer,Active,
+EMP1008,Kavya  Nair,kavya.nair@acme-corp.com ,9876543217,14/01/1995,19/07/2022,Design,Product Designer,ACTIVE,
+EMP1009,Rohit Khanna,rohit.khanna@acme-corp.com,9876543218,02/02/1989,08/08/2018,Engineering,Staff Engineer,Active,
+EMP1010,Meera  Iyer,meera.iyer@acme-corp.com,+91 98765 43219,21/05/1990,27/02/2019,Finance,Financial Analyst,Active,
+EMP1011,Sanjay Patil,sanjay.patil@acme-corp.com,9876543220,30/09/1984,14/04/2012,Ops Excellence,Operations Head,Active,
+EMP1012,Divya  Menon,divya.menon@acme-corp.com,9876543221,11/11/1994,01/09/2021,Human Resources,Talent Acquisition Specialist,active,
+EMP1013,Farhan  Ali,farhan.ali@acme-corp.com,9876543222,03/07/1990,21/08/2017,Engineering,DevOps Engineer,Active,
+EMP1014,Shreya  Joshi, SHREYA.JOSHI@ACME-CORP.COM,9876543223,16/02/1992,09/10/2019,Design,UX Researcher,Inactive,
+EMP1017,Rahul Bose,rahul.bose@acme-corp.com,9876543226,08/04/1986,12/12/2014,Sales,Key Account Manager,Active,
+EMP1031,Ananya  Desai,,9876543230,19/08/1996,06/06/2023,Marketing,Content Strategist,Active,email pending
+EMP1042,Karan  Malhotra,,9876543241,25/10/1991,17/01/2020,Engineering,QA Engineer,Active,contractor conversion

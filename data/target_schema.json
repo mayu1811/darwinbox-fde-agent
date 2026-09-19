@@ -1,0 +1,206 @@
+{
+  "entity": "employee",
+  "version": "1.0.0",
+  "primary_key": "employee_id",
+  "fields": {
+    "employee_id": {
+      "type": "string",
+      "required": true,
+      "critical": true,
+      "description": "Unique employee code in the target platform",
+      "aliases": [
+        "employee id",
+        "emp id",
+        "employee code",
+        "empcode",
+        "emp no",
+        "staff id",
+        "employee number",
+        "empid",
+        "personnel number"
+      ]
+    },
+    "full_name": {
+      "type": "string",
+      "required": true,
+      "critical": true,
+      "description": "Full legal name of the employee",
+      "aliases": [
+        "full name",
+        "employee name",
+        "name",
+        "fullname",
+        "display name",
+        "staff name",
+        "emp name"
+      ]
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "critical": true,
+      "description": "Primary work email address",
+      "aliases": [
+        "email",
+        "email address",
+        "work email",
+        "official email",
+        "e mail",
+        "mail id",
+        "emailid"
+      ]
+    },
+    "mobile_phone": {
+      "type": "phone",
+      "required": false,
+      "critical": false,
+      "description": "Personal mobile number reachable outside office hours",
+      "aliases": [
+        "mobile",
+        "mobile phone",
+        "mobile no",
+        "mobile number",
+        "cell",
+        "cell phone",
+        "personal phone",
+        "contact no",
+        "contact number",
+        "contact",
+        "phone",
+        "phone no",
+        "phone number",
+        "telephone"
+      ]
+    },
+    "work_phone": {
+      "type": "phone",
+      "required": false,
+      "critical": false,
+      "description": "Office desk / landline extension",
+      "aliases": [
+        "work phone",
+        "office phone",
+        "desk phone",
+        "landline",
+        "extension",
+        "office number",
+        "work number",
+        "contact no",
+        "contact number",
+        "contact",
+        "phone",
+        "phone no",
+        "phone number",
+        "telephone"
+      ]
+    },
+    "date_of_birth": {
+      "type": "date",
+      "format": "YYYY-MM-DD",
+      "required": false,
+      "critical": false,
+      "description": "Date of birth",
+      "aliases": [
+        "dob",
+        "date of birth",
+        "birth date",
+        "birthdate",
+        "born on",
+        "d o b"
+      ]
+    },
+    "joining_date": {
+      "type": "date",
+      "format": "YYYY-MM-DD",
+      "required": false,
+      "critical": false,
+      "description": "Date the employee joined the organisation",
+      "aliases": [
+        "doj",
+        "date of joining",
+        "joining date",
+        "joined on",
+        "hire date",
+        "start date",
+        "date joined"
+      ]
+    },
+    "department": {
+      "type": "string",
+      "required": false,
+      "critical": false,
+      "description": "Department / business unit",
+      "aliases": [
+        "dept",
+        "department",
+        "department name",
+        "business unit",
+        "division",
+        "function"
+      ]
+    },
+    "designation": {
+      "type": "string",
+      "required": false,
+      "critical": false,
+      "description": "Job title / designation",
+      "aliases": [
+        "designation",
+        "job title",
+        "title",
+        "role",
+        "position",
+        "grade title"
+      ]
+    },
+    "status": {
+      "type": "enum",
+      "values": [
+        "active",
+        "inactive"
+      ],
+      "required": true,
+      "critical": true,
+      "description": "Employment status in the target platform",
+      "aliases": [
+        "status",
+        "employee status",
+        "employment status",
+        "emp status",
+        "active flag",
+        "state"
+      ]
+    }
+  },
+  "enum_normalisation": {
+    "status": {
+      "active": [
+        "active",
+        "a",
+        "y",
+        "yes",
+        "working",
+        "employed",
+        "current",
+        "on roll",
+        "onroll",
+        "1",
+        "true"
+      ],
+      "inactive": [
+        "inactive",
+        "i",
+        "n",
+        "no",
+        "resigned",
+        "exited",
+        "left",
+        "terminated",
+        "separated",
+        "ex employee",
+        "0",
+        "false"
+      ]
+    }
+  }
+}

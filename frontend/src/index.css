@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body {
+    @apply bg-ink-950 text-ink-200 antialiased;
+    color: #dbe1ec;
+  }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #2a3242; border-radius: 6px; }
+  ::-webkit-scrollbar-thumb:hover { background: #3b4558; }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-ink-800 bg-ink-900/70 backdrop-blur;
+  }
+  .panel-pad { @apply p-5; }
+  .label {
+    @apply text-[11px] font-semibold uppercase tracking-[0.12em] text-ink-500;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium
+           transition-colors disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-primary { @apply btn bg-accent text-white hover:bg-[#4a7ce0]; }
+  .btn-ghost   { @apply btn border border-ink-700 text-ink-300 hover:bg-ink-800 hover:text-white; }
+  .btn-danger  { @apply btn border border-rose-900/60 text-rose-300 hover:bg-rose-950/50; }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-md px-2 py-0.5 text-[11px] font-medium;
+  }
+  .cell { @apply px-3 py-2 align-top text-sm; }
+  .th {
+    @apply sticky top-0 z-10 bg-ink-850 px-3 py-2 text-left text-[11px] font-semibold
+           uppercase tracking-wider text-ink-400;
+  }
+}
